@@ -1,3 +1,4 @@
+#ifndef LINKEDLIST_INC
 #define LINKEDLIST_INC
 
 #ifndef NODE_INC
@@ -6,7 +7,7 @@
 
 typedef struct  {
 	Node * head;
-	int size;
+	unsigned int size;
 } LinkedList;
 
 
@@ -21,3 +22,5 @@ Node * list_get_tail(LinkedList * in_list);
 Node * list_create_node(void * in_data);
 
 #include "linkedlist.c"
+
+#endif // !def LINKEDLIST_INC
